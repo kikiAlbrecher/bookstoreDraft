@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/bookstore.png">
+    <title>bookstore</title>
+
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/font_sizes.css">
+    <link rel="stylesheet" href="./styles/section_padding.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/flex.css">
+    <link rel="stylesheet" href="./styles/min_height_max_width_of_website.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/imprint_dataprivacy.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/db.js"></script>
+    <script src="./script.js"></script>
+    <script src="./scripts/standard.js"></script>
+    <script src="./scripts/contact.js"></script>
+</head>
+
+<body onload="includeHTML(), init()">
+
+    <div w3-include-html="./assets/templates/header.html"></div>
+
+    <div class="min_height_max_width_of_website bg_deco header_footer_line">
+        <div class="main dfr header_line m_auto dfr cc">
+
+            <section class="section_pad_left_right dfc cc books">
+                <h1 class="store_name">Kiki´s Bookstore</h1>
+                <div id="all_books">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div w3-include-html="./assets/templates/footer.html"></div>
+</body>
+
+</html>

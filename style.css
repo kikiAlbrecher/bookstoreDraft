@@ -1,0 +1,153 @@
+.main {
+    max-width: 1920px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.store_name {
+    padding: 40px 0 24px 0;
+}
+
+.books {
+    width: 100%;
+}
+
+.book_example {
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.book_name {
+    padding: 16px 0 8px 0;
+}
+
+.book_cover {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.separator {
+    margin: 16px 0 24px 0;
+}
+
+.basic_data_div {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 24px;
+}
+
+.like_dislike_icon {
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(25, 111, 121);
+    padding: 0;
+}
+
+.book_details {
+    font-weight: bold;
+    gap: 8px;
+}
+
+.book_details_details {
+    font-weight: bold;
+}
+
+.author_year_genre {
+    gap: 8px;
+}
+
+.price_tag {
+    color: rgb(239, 28, 28);
+    font-weight: bold;
+    padding: 0;
+}
+
+.price_and_likes {
+    max-height: 48px;
+}
+
+.commentary_div {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.commentary {
+    color: black;
+    width: calc(100% - (24px + 8px));
+    margin-bottom: 16px;
+}
+
+.book_btns {
+    background-color: rgb(25, 111, 121);
+    padding: 0;
+    border: none;
+}
+
+.book_btns:hover {
+    cursor: pointer;
+}
+
+.like_div {
+    gap: 8px;
+}
+
+.send_icon {
+    height: 24px;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(25, 111, 121);
+    padding: 0;
+}
+
+.comment_writer {
+    word-wrap: break-word;
+    width: 208px;
+}
+
+.comment_text {
+    word-wrap: break-word;
+}
+
+.comments {
+    padding-bottom: 16px;
+    gap: 8px;
+}
+
+@media (max-width: 1440px) {
+    .comment_writer {
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comments {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .display_comment {
+        display: block;
+        float: left;
+    }
+
+    td {
+        display: block
+    }
+}
+
+@media (max-width: 520px) {
+    .book_example {
+        width: calc(95vw - 40px);
+    }
+
+    .book_cover {
+        height: 120px;
+    }
+
+    .like_dislike_icon {
+        height: 32px;
+    }
+}
